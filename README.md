@@ -1,16 +1,39 @@
 # universal_scroll_view
 
-Universal Single Child Scroll View
+Universal Scroll View is a cross platform package which base on Flutter framework.  
 
-## Getting Started
+latest updated: 17:49:19 08-08-2021
+---
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Install
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Install by adding this package to your `pubspec.yaml`:
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```yaml
+dependencies:
+  universal_scroll_view: ^1.0.2
+```
+
+## Usage
+---
+
+### Import
+```dart
+import 'package:universal_scroll_view/universal_single_child_scroll_view.dart';
+```
+
+### Simple Example
+```dart
+    
+     UniversalSingleChildScrollView(child: Container(
+         height: 10000,
+         width: 500
+      )
+     );
+
+```
+
+# License
+Copyright © 2020, [Jialin Li](https://github.com/keyskull).  
+Released under the [GNU AGPLv3](LICENSE).
