@@ -1,7 +1,7 @@
 name: universal_scroll_view
 description: Universal Scroll View is a cross platform package which base on Flutter framework.
 homepage: https://cullen.ml/
-version: 1.0.2
+version: 1.0.3
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
