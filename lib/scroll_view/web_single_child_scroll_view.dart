@@ -7,8 +7,7 @@ import 'package:universal_html/html.dart' as html;
 class WebSingleChildScrollView extends StatefulWidget {
   final Widget child;
 
-  WebSingleChildScrollView({Key? key, required this.child})
-      : super(key: key);
+  WebSingleChildScrollView({Key? key, required this.child}) : super(key: key);
 
   @override
   State<StatefulWidget> createState() {
@@ -16,8 +15,7 @@ class WebSingleChildScrollView extends StatefulWidget {
   }
 }
 
-class WebSingleChildScrollViewState
-    extends State<WebSingleChildScrollView>
+class WebSingleChildScrollViewState extends State<WebSingleChildScrollView>
     with AfterLayoutMixin<WebSingleChildScrollView> {
   final Widget child;
 
@@ -113,8 +111,7 @@ class WebSingleChildScrollViewState
   }
 
   @override
-  void didUpdateWidget(
-      covariant WebSingleChildScrollView oldWidget) {
+  void didUpdateWidget(covariant WebSingleChildScrollView oldWidget) {
     super.didUpdateWidget(oldWidget);
   }
 
