@@ -12,7 +12,7 @@ Install by adding this package to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  universal_scroll_view: ^1.0.2
+  universal_scroll_view: ^[latest version]
 ```
 
 ## Usage
@@ -25,12 +25,26 @@ import 'package:universal_scroll_view/universal_single_child_scroll_view.dart';
 
 ### Simple Example
 ```dart
-    
-     UniversalSingleChildScrollView(child: Container(
-         height: 10000,
-         width: 500
-      )
-     );
+
+UniversalSingleChildScrollView(
+    child: Center(
+        child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: List.generate(
+                50,
+                (index) => Container(
+                    height: 500,
+                    color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
+                    child: Center(child: Column(
+                            children: [
+                                Text(index.toString()),
+                                Text("Supported browser scrolling event.")
+                    ],
+                ),
+            ),
+        ))),
+    ),
+);
 
 ```
 
