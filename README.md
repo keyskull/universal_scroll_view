@@ -1,10 +1,13 @@
-# universal_scroll_view
+# `universal_scroll_view` [![pub package](https://img.shields.io/pub/v/universal_scroll_view.svg)](https://pub.dartlang.org/packages/universal_scroll_view)
 
-Universal Scroll View is a cross platform package which base on Flutter framework.  
+Universal Scroll View is a cross platform package which base on Flutter framework.
 
-latest updated: 17:49:19 08-08-2021
----
 
+## Features
+
+- Web: Support browser scrolling event. 
+    * Available desktop use mouse middle button for scrolling;
+    * Available To hiding url bar in mobile browser, etc. Safari, Chrome;
 
 ## Install
 
@@ -19,11 +22,13 @@ dependencies:
 ---
 
 ### Import
+
 ```dart
 import 'package:universal_scroll_view/universal_single_child_scroll_view.dart';
 ```
 
 ### Simple Example
+
 ```dart
 
 UniversalSingleChildScrollView(
@@ -49,5 +54,6 @@ UniversalSingleChildScrollView(
 ```
 
 # License
+
 Copyright © 2020, [Jialin Li](https://github.com/keyskull).  
 Released under the [GNU AGPLv3](LICENSE).

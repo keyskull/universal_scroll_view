@@ -1,6 +1,5 @@
 import 'dart:developer';
 
-import 'package:after_layout/after_layout.dart';
 import 'package:flutter/material.dart';
 import 'package:universal_html/html.dart' as html;
 
@@ -15,8 +14,7 @@ class WebSingleChildScrollView extends StatefulWidget {
   }
 }
 
-class WebSingleChildScrollViewState extends State<WebSingleChildScrollView>
-    with AfterLayoutMixin<WebSingleChildScrollView> {
+class WebSingleChildScrollViewState extends State<WebSingleChildScrollView> {
   final Widget child;
 
   WebSingleChildScrollViewState(this.child);
@@ -99,6 +97,9 @@ class WebSingleChildScrollViewState extends State<WebSingleChildScrollView>
       }
     });
     target!.after(scrollFrame);
+    WidgetsBinding.instance!.endOfFrame.then(
+      (_) => afterFirstLayout(context),
+    );
     super.initState();
   }
 
@@ -115,7 +116,6 @@ class WebSingleChildScrollViewState extends State<WebSingleChildScrollView>
     super.didUpdateWidget(oldWidget);
   }
 
-  @override
   void afterFirstLayout(BuildContext context) {
     log('afterFirstLayout', name: 'ml.numflurry.BrowserScrollViewState');
     _scrollController.position.jumpTo(1);
